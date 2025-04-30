@@ -1,8 +1,8 @@
 import { Container } from "./components/Container";
 import { Logo } from "./components/Logo";
-
-import "./styles/global.css";
 import "./styles/theme.css";
+import "./styles/global.css";
+import { Menu } from "./components/Menu";
 
 export function App() {
   return (
@@ -10,9 +10,10 @@ export function App() {
       <Container>
         <Logo />
       </Container>
-      <Container>MENU</Container>
-      <Container>FORM</Container>
-      <Container>FOOTER</Container>
+
+      <Container>
+        <Menu />
+      </Container>
     </>
   );
 }
